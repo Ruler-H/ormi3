@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        li:only-child{
+            color: red;
+        }
+
+        body :only-child{
+            background-color: skyblue;
+        }
+
+        ol.item{
+            border: 2px solid royalblue;
+        }
+
+        ol .item.bold{
+            border: 2px solid gold;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li class="item bold">hello</li>
+        <li class="item">hello</li>
+        <li class="bold">hello</li>
+    </ol>
+    <ol class="item">
+        <li>hello</li>
+    </ol>
+    <p>
+        hello
+        <strong>every one!</strong>
+        <strong>every one!</strong>
+    </p>
+    <p>
+        hello
+        <strong>every one!</strong>
+    </p>
+</body>
+</html>
