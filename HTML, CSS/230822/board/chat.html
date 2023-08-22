@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>채팅</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/chat.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="layout-header">
+		<h1><a href="./">HTML/CSS 실습</a></h1>
+
+		<div>
+			<a href="./chat.html">채팅</a>
+			<a href="./login.html">로그인</a>
+			<a href="./join.html">회원가입</a>
+			<button type="button">로그아웃</button>
+		</div>
+	</header>
+	<!-- // header -->
+
+	<!-- main -->
+	<main class="chat">
+
+		<h2 class="main-title">채팅</h2>
+		<p class="main-desc">채팅 페이지입니다.</p>
+
+		<!-- chat -->
+		<article class="chat-container">
+			<h3 class="chat-title">라이캣에게 질문을 해보세요!</h3>
+			<div class="chat-screen">
+				<div class ="ai-chat">
+					<img src="./img/licat.png" alt="챗봇 상담원" class="chat-img">
+					<div class="chat-wrap">
+						<div class="chat-content">
+							<p class ="chat-txt">반갑습니다. 어떤 것이 궁금하신가요?</p>
+						</div>
+						<div class="chat-content">
+							<p class ="chat-txt">반갑습니다. 어떤 것이 궁금하신가요?</p>
+						</div>
+						<div class="chat-content">
+							<p class ="chat-txt">반갑습니다. 어떤 것이 궁금하신가요?</p>
+						</div>
+					</div>
+				</div>
+				<div class ="user-chat">
+					<div class="chat-content"><p>CSS 예시코드 문서를 작성해줘!</p></div>
+					<div class="chat-content"><p>CSS 예시코드 문서를 작성해줘!</p></div>
+					<div class="chat-content"><p>CSS 예시코드 문서를 작성해줘!</p></div>
+					<div class="chat-content"><p>CSS 예시코드 문서를 작성해줘!</p></div>
+					<div class="chat-content"><p>CSS 예시코드 문서를 작성해줘!</p></div>
+				</div>
+				<div class ="ai-chat">
+					<img src="./img/licat.png" alt="챗봇 상담원" class="chat-img">
+					<div class="chat-wrap">
+						<div class="chat-content">
+							<p class ="chat-txt">
+								CSS 예시코드입니다
+							</p>
+							<code class ="chat-code">
+								@font-face{
+									font-family: Chunkfive; src: url('Chunkfive.otf');
+								}
+								body, .usertext{
+									color: #F0F0F0; background: #600;
+									font-family: 30px/32px Helvetica, sans-serif;
+								}
+								@import url(print.css);
+								@media print{
+									a[href^=http]::after {
+										content: attr(href)
+									}
+								}
+							</code>
+							<p>짜잔~</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			<form class ="chat-form" method="post">
+				<!-- <label for="question">질문</label> -->
+				<textarea id="question" class ="chat-txtarea" required maxlength="500"></textarea>
+				<button type="submit" class="chat-btn">전송</button>
+			</form>
+		</article>
+		<!-- //chat -->
+	</main>
+	<!-- // main -->
+
+	<!-- footer -->
+	<footer class="layout-footer">
+		Copyright 2023. HRuler All rights reserved.
+	</footer>
+
+	<!-- // footer -->
+
+
+</body>
+
+</html>

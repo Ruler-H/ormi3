@@ -1,0 +1,125 @@
+/* main ---------------------------- */
+/* 로그인 페이지 --------  --------- */
+ul, ol, li{
+    list-style: none;
+}
+
+.login{
+    width: 400px;
+    margin: auto;
+}
+
+.join{
+    width: 400px;
+    margin: auto;
+}
+
+.login-title,
+.login-desc{
+    text-align: center;
+}
+
+.join-title,
+.join-desc{
+    text-align: center;
+}
+
+.login-title{
+    font-size: 24px;
+}
+
+.join-title{
+    font-size: 24px;
+}
+
+.login-desc{
+    color: #767676;
+    margin: 10px 0 30px;
+}
+
+.join-desc{
+    color: #767676;
+    margin: 10px 0 30px;
+}
+
+/* 컨테이너 1 */
+.login-form, .join-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 컨테이너 2 */
+.flex-input{
+    display: flex;
+    align-items: center;
+}
+.join-input{
+    display: flex;
+    align-items: center;
+}
+.box-input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.selectbox{
+    display: inline;
+    width: 320px;
+}
+
+/* 컨테이너 2 : 아이템 */
+.flex-input label{
+    width: 80px;
+}
+
+.join-form label{
+    width: 80px;
+}
+.box-input label{
+    width: 80px;
+    align-content: flex-start;
+}
+
+.flex-input input,
+.join-form input{
+    height: 28px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-btn,
+.join-btn{
+    background-color: royalblue;
+    border: 0;
+    border-radius: 4px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.5s;
+}
+
+.login-btn:hover,
+.join-btn:hover{
+    background-color: rgb(76, 120, 249);
+}
+
+.login-btn:disabled,
+.join-btn:disabled{
+    background-color: #ccc;
+}
+
+/* fiedl */
+.field-flex{
+    border: 0;
+    display: flex;
+}
+
+.field-flex p{
+    width: 80px;
+    flex-shrink: 0;
+}

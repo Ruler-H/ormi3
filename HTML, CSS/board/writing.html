@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>글쓰기</title>
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/writing.css">
+</head>
+<body>
+	<!-- header -->
+	<!-- h1 -->
+	<!-- /header -->
+	<main class="writing-main">
+		<h2 class="writing-h2">글쓰기</h2>
+	
+		<p class="writing-desc">내용을 입력해 주세요</p>
+		<form action="" method="post"
+		class="writing-form">
+			<div class="writing-row">
+				<label class="writing-label">카테고리</label>
+				<div class="writing-detail">
+					<select class="writing-input writing-select">
+						<option>일반</option>
+						<option>공지사항</option>
+					</select>
+				</div>
+			</div>
+			<div class="writing-row">
+				<label class="writing-label">제목</label>
+				<div class="writing-detail">
+					<input type="text" class="writing-input writing-title">
+				</div>
+			</div>
+			<div class="writing-row text-row">
+				<label class="writing-label">내용</label>
+				<div class="writing-detail">
+					<textarea name="" id="" cols="10" rows="10" class="writing-input writing-text"></textarea>
+				</div>
+			</div>
+			<div class="writing-row">
+				<label class="writing-label">파일첨부</label>
+				<div class="writing-detail">
+					<input type="file">
+				</div>
+			</div>
+			<div>
+				<a href="">목록</a>
+				
+				<button type="reset">초기화</button>
+				
+				<button type="submit">작성</button>
+			</div>
+		</form>
+	</main>
+	<!-- footer -->
+	<!-- /footer -->
+</body>
+</html>

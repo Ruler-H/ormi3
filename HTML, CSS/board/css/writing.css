@@ -1,0 +1,68 @@
+.writing-main{
+	width: 100vw;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+.writing-h2{
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+
+.writing-desc{
+	color:#767676;
+	padding-bottom: 10px;
+}
+
+.writing-form{
+	border-top: 2px solid black;
+	display: flex;
+	flex-direction: column;
+}
+
+.writing-row{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	border-bottom: 1px solid gray;
+}
+
+.writing-label{
+	background-color: #eee;
+	width: 15%;
+	height: 100%;
+	display: flex;
+	font-weight: bold;
+	justify-content: center;
+	align-items: center;
+}
+
+.writing-detail{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 5px;
+	width: 100%;
+}
+
+.writing-input{
+	height: 70%;
+}
+
+.writing-select{
+	width: 20%;
+}
+
+.writing-title,
+.writing-text{
+	width: 95%;
+}
+
+.text-row{
+	height: 45vh;
+}
+
+.writing-text{
+	height: 40vh;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title></title>
+		<style>
+			.span-box{
+				background-color: skyblue;
+				width: 100px;
+				height: 100px;
+				display: inline-block;
+				float: left;
+			}
+			.p-box{
+				clear:both;
+			}
+			.div-box{
+				height: 50px;
+				background-color: blueviolet;
+				/* overflow: hidden; */
+			}
+			.div-box::after{
+				content: '';
+				display: block;
+				clear: left;
+			}
+		</style>
+</head>
+<body>
+		<div class="div-box">container
+			<span class="span-box">box</span>
+			<p class="p-box">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla harum iure ipsum, temporibus iusto quam explicabo, doloribus fuga nemo non ducimus! Ab non sed fuga totam provident blanditiis doloribus dignissimos!
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, vitae. Tempore quas ex nam iste quisquam praesentium inventore, iure cum cupiditate omnis distinctio. Voluptatibus in corrupti praesentium hic voluptatum possimus!
+				Sit mollitia incidunt odio sunt eos veritatis recusandae nihil eaque nesciunt, excepturi voluptate, repellat perspiciatis molestiae pariatur rem numquam. Pariatur iste harum laudantium possimus nemo dolor. Velit corrupti perspiciatis delectus!
+				Dolore hic expedita distinctio nemo veritatis. Eaque fugit quaerat aperiam voluptate eos repudiandae, quisquam minus ad soluta tempora iusto hic deserunt pariatur incidunt? Cupiditate architecto repellendus ipsum inventore dolor praesentium?
+				Aperiam eligendi esse libero commodi enim ipsum facilis vel architecto aliquam? Accusamus quisquam cum adipisci esse debitis, aliquam sit consequatur nobis facilis quod magnam ea aut et dolor tempore delectus.
+				Quia fuga cupiditate inventore tempora doloremque ipsam fugiat nemo ullam, enim ipsum culpa libero. Adipisci, iusto magni minus deserunt quidem voluptatum ratione id, molestias molestiae explicabo dolorem libero nobis fugit.
+			</p>
+		</div>
+</body>
+</html>

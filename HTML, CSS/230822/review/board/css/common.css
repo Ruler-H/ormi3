@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap');
+
+/* 초기화 */
+h2,
+h3,
+h4,
+p{
+	margin: 0;
+}
+
+body{
+	font-family: 'Nanum Gothic', sans-serif;
+}
+
+/* common */
+
+
+
+/* login & join */
+.lojo-main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.lojo-input{
+	width: 70%;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	flex-grow: 1;
+}
+
+.lojo-desc{
+	color: #aaa;
+	font-weight: bold;
+}
+
+.lojo-label{
+	font-weight: bold;
+	width: 20%;
+	display: inline-block;
+}
+
+.lojo-form{
+	display: flex;
+	flex-direction: column;
+	width: 450px;
+}
+
+.lojo-form  *{
+	margin: 5px 0;
+}
+
+.login-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.lojo-header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 30px;
+	justify-content: space-between;
+	height: 60px;
+}
+
+.lojo-btn{
+	border: 0;
+	background-color: #4a68d9;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+	font-size: 20px;
+	height: 45px;
+}
+
+/* view */
+main{
+	display: flex;
+	flex-direction: column;
+}
+
+header{
+	display: flex;
+	flex-direction: column;
+}
+
+h2{
+	margin-bottom: 10px;
+	font-weight:bold;
+}
+
+.write-detail{
+	display: flex;
+	flex-direction: row;
+	margin: 0;
+}
+
+.write-detail p:not(:first-child)::before{
+	content: '|';
+	margin: 0 10px;
+	color: #ccc;
+}
+
+.view-header{
+	background-color: #ddd;
+	border-top: 2px solid black;
+	padding: 15px;
+}
+
+
+.view-header p{
+	margin: 5px;
+}
+.view-content{
+	padding: 15px;
+}
+
+.content-section:not(:nth-child(1)){
+	margin-top: 40px;
+}
+
+.content-section > ol,
+.content-section > ul{
+	margin: 0;
+}
+
+.view-screen{
+	border-bottom: 2px solid #ddd;
+}
+
+/* login */
+.login-form div{
+	display: flex;
+	align-items: center;
+}
+
+.login-save{
+	font-weight: bold;
+	margin-left: 8px;
+}
+
+
+
+/* join */
+.join-radio{
+	display: inline-block;
+	width: 70%;
+	height: 30px;
+	border: 0;
+	border-radius: 4px;
+	flex-grow: 1;
+}
+
+.join-radio input{
+	margin: 3px;
+	font-weight: bold;
+}
+
+.join-radio input:not(:first-child){
+	margin-left: 20px;
+}
+
+.checkbox-section{
+	display: flex;
+}
+
+.join-checkbox{
+	width: 70%;
+	height: 60px;
+	border-radius: 4px;
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 14px;
+}
+
+.list-table{
+	background-color: #ccc;
+	border-collapse: collapse;
+	width: 100%;
+	border-top: 2px solid black;
+	text-align: center;
+}
+
+.list-table th,
+.list-table td{
+	padding: 8px;
+}
+
+.list-table tbody{
+	
+	background-color: white;
+}
+
+.list-table tr{
+	border-bottom: 1px solid #ccc;
+}
+
+.list-table tbody td:nth-child(2){
+	text-align: left;
+}

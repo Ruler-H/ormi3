@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>write</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/list.css">
+</head>
+
+<body>
+	<!-- header -->
+	<header class="layout-header">
+		<h1 class="main-title">HTML/CSS 실습</h1>
+		<div class="btn-group">
+			<a href="./chat.html" class="layout-btn">채팅</a>
+			<a href="./login.html" class="layout-btn">로그인</a>
+			<a href="./join.html" class="layout-btn">회원가입</a>
+			<button class="layout-btn">로그아웃</button>
+		</div>
+	</header>
+	<!-- /header -->
+	<main class="write">
+		<h2 class="main-title">글쓰기</h2>
+		<p>내용을 입력해 주세요</p>
+		<form action="" method="post">
+			<table class="board-table">
+				<colgroup>
+					<col style="width: 120px;">
+
+				</colgroup>
+				<tbody>
+					<tr>
+						<th><label for="category">카테고리</label></th>
+						<td class="tal">
+							<select name="category" id="category">
+								<option value="category1" selected>일반</option>
+								<option value="category2">공지사항</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th><label for="board-title">제목</label></th>
+						<td class="tal"><input type="text" id="board-title" name="board-title" minlength="5" maxlength="30" placeholder="5글자 이상 30글자 이하로 작성해 주세요"></td>
+					</tr>
+					<tr>
+						<th><label for="board-content">내용</label></th>
+						<td class="tal"><textarea id="board-content" name="board-content"></textarea></td>
+					</tr>
+					<tr>
+						<th><label for="board-file">파일첨부</label></th>
+						<td class="tal"><input type="file" id="board-file" name="board-file" accept="image/jpg"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btn-group">
+				<a href="./list.html" class="btn">목록</a>
+				<button type="reset" class="btn">초기화</button>
+				<button type="submit" class="btn">작성</button>
+			</div>
+		</form>
+	</main>
+		<!-- footer -->
+		<footer class="layout-footer">
+			Copyright 2023. HRuler All rights reserved.
+		</footer>
+		<!-- /footer -->
+</body>
+
+</html>

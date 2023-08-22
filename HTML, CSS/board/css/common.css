@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* 초기화 */
+body,
+h1,
+h2,
+h3,
+h4,
+p{
+    margin:0;
+    padding: 0;
+    font-family: "Nanum Myeongjo";
+}
+button:enabled{
+    cursor: pointer;
+}
+
+ul, ol, li{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* main ---------------------------- */
+/* 로그인 페이지 --------  --------- */
+.login{
+    width: 400px;
+    margin: auto;
+}
+
+.join{
+    width: 400px;
+    margin: auto;
+}
+
+.login-title,
+.login-desc{
+    text-align: center;
+}
+
+.join-title,
+.join-desc{
+    text-align: center;
+}
+
+.main-title{
+    font-size: 24px;
+}
+
+.main-desc{
+    color: #767676;
+    margin: 10px 0 30px;
+}
+
+/* 컨테이너 1 */
+.main-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* 컨테이너 2 */
+.flex-input{
+    display: flex;
+    align-items: center;
+}
+.join-input{
+    display: flex;
+    align-items: center;
+}
+.box-input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.selectbox{
+    display: inline;
+    width: 320px;
+}
+
+/* 컨테이너 2 : 아이템 */
+.flex-input label{
+    width: 80px;
+}
+
+.join-form label{
+    width: 80px;
+}
+.box-input label{
+    width: 80px;
+    align-content: flex-start;
+}
+
+.flex-input input,
+.join-form input{
+    height: 28px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.login-btn,
+.join-btn{
+    background-color: royalblue;
+    border: 0;
+    border-radius: 4px;
+    height: 45px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.5s;
+}
+
+.login-btn:hover,
+.join-btn:hover{
+    background-color: rgb(76, 120, 249);
+}
+
+.login-btn:disabled,
+.join-btn:disabled{
+    background-color: #ccc;
+}
+
+/* field */
+.field-flex{
+    border: 0;
+    display: flex;
+}
+
+.field-flex p{
+    width: 80px;
+    flex-shrink: 0;
+}
+
+/* :root{
+    --graycolor : #ddd;
+}
+
+.dark{
+    --bgcolor: black;
+    --texcolor: white;
+}
+
+.light{
+    --bgcolor: yellow;
+    --texcolor: blue;
+}
+
+body{
+    background-color: var(--bgcolor);
+    color: var(--texcolor)
+} */
+
+/* form 관련 */
+textarea,
+select,
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    height: 28px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding:0 8px;
+    box-sizing: border-box;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    gap: 8px;
+}
+
+.btn{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    font: inherit;
+    color: inherit;
+    border-radius: 4px;
+    padding: 4px 20px;
+    min-width: 80px;
+}
+
+a.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* layout -------------------------------- */
+.layout-header{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 80px;
+    border-bottom: 1px solid #ccc;
+}
+
+.layout-header div{
+    display: flex;
+    gap: 40px;
+}
+
+.layout-header div *{
+    text-decoration: none;
+    font:inherit;
+    color:inherit;
+    background: none;
+    border: 0;
+}
+
+.layout-footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    gap:60px;
+    min-height: 100vh;
+    /* justify-content: space-between; */
+}
+
+main{
+    flex-grow: 1;
+}
