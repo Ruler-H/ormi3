@@ -31,7 +31,7 @@ body{
 	flex-grow: 1;
 }
 
-.lojo-desc{
+.lojowr-desc{
 	color: #aaa;
 	font-weight: bold;
 }
@@ -205,4 +205,57 @@ h2{
 
 .list-table tbody td:nth-child(2){
 	text-align: left;
+}
+
+/* write */
+.write-table{
+	/* border-top: 2px solid black; */
+	border-collapse: collapse;
+	margin-top: 10px;
+}
+.write-table tr:first-child{
+	border-top: 2px solid black;
+}
+
+.write-table tr{
+	border-bottom: 1px solid #bbb;
+	display: flex;
+	align-items: center;
+	height: 50px;
+}
+
+.write-table th{
+	background-color: #eee;
+	width: 20%;
+	height: 49px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+.write-detail{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+}
+
+.write-select{
+	width: 100px;
+	padding: 5px;
+}
+
+.write-table td{
+  padding:16px 8px;
+}
+
+.write-detail textarea{
+	resize: none;
+	height: 200px;
+}
+
+.write-textarea{
+	height: 100px;
 }
