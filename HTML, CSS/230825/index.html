@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style>
+		img{
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+
+<body>
+	<input type="text">
+	<button>버튼!</button>
+	<ul></ul>
+
+	<p>병헌아 열공해라</p>
+
+	<img class="terran battle-cruiser" src="battle-cruiser.png" data-ship-id="324" data-weapons="laser" data-health="400"
+		data-mana="250" data-skill="yamato-cannon" />
+</body>
+<script>
+	const myBtn = document.querySelector("button");
+	const myUl = document.querySelector("ul");
+
+	// myBtn.addEventListener("click", () =>{
+	// 	for(let i=0; i < 5; i++){
+	// 		const myLi = document.createElement('li');
+	// 		myUl.appendChild(myLi);
+	// 	}
+	// })
+	// Todo list 만들기
+	// 인풋 요소 안의 값을 li에 추가
+	// const myInput = document.querySelector("input");
+	// myBtn.addEventListener("click", () => {
+	// 	const inputValue = myInput.value;
+	// 	if(inputValue === ""){
+	// 		return 
+	// 	}
+	// 	const myLi = document.createElement('li');
+	// 	const delBtn = document.createElement('button');
+	// 	const btnText = document.createTextNode('완료');
+	// 	delBtn.append(btnText);
+	// 	delBtn.addEventListener('click', ()=>{
+	// 		myLi.remove();
+	// 	})
+	// 	myLi.append('할일 : ', inputValue, delBtn);
+	// 	myUl.appendChild(myLi);
+	// })
+
+	// const target = document.querySelector('p');
+	// target.style.color = "red";
+	// const targetColor = target.style.color;
+	// console.log('타겟의 색은 ?', targetColor);
+
+	// const img = document.querySelector('img');
+	// img.src
+	// console.log(img.dataset);
+</script>
+
+</html>

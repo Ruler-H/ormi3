@@ -1,9 +1,2 @@
-const num = []
-
-console.log(num.reduce((a, c) => {
-	if (c % 2 === 1) {
-		return a + c
-	}else{
-		return a
-	}
-})) // error
+console.log(`저도 잘모릅니닿ㅎ;; ${2+1}`);
+// 저도 잘모릅니닿ㅎ;; 3

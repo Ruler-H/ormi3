@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+	<style></style>
+</head>
+<body>
+	<p>시간
+		<span id="time">0</span>
+	</p>
+	<button>로그</button>
+	<script>
+		// setInterval(콜백함수, 시간)
+		let 타이머 = 0;
+		const 콜백함수 = () => {
+			타이머 += 1
+			const span = document.getElementById("time");
+			span.innerText = 타이머;
+		}
+		const 시간 = 1000
+		// 시간이 지날 때마다 콜백함수를 실행
+		setInterval(콜백함수, 시간)
+
+		const button = document.querySelector("button")
+		button.addEventListener("click", ()=>{
+			console.log("버튼이 클릭되었습니다!")
+			타이머 += 10
+		})
+	</script>
+</body>
+</html>
