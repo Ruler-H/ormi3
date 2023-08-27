@@ -1,6 +1,1 @@
-const me = { name: "병헌", address: "고양" };
-const newAddress = {address : "하남"};
-const newMe = {...me, ...newAddress}
-
-console.log(newMe);
-// { name: '병헌', address: '하남' }
+ES6 이전에 사용했던 수동적인 디스트럭쳐링에 대해 살펴봅시다.
