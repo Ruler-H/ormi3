@@ -1,0 +1,5 @@
+log_name, 2023-09-19 15:41:48,926, INFO, info
+log_name, 2023-09-19 15:41:48,927, WARNING, warning
+log_name, 2023-09-19 15:41:48,927, ERROR, error
+log_name, 2023-09-19 15:41:48,928, CRITICAL, critical
+log_name, 2023-09-19 15:41:48,929, ERROR, division by zero error
