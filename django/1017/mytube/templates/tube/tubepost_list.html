@@ -1,0 +1,12 @@
+<h2>TubePost List</h2>
+<form action="" method="get">
+    <input type="search" name="q">
+    <button type="submit">검색</button>
+</form>
+<ul>
+    {% for tubepost in object_list %}
+        <li>
+            <a href="{% url 'tube_detail' tubepost.pk %}">{{ tubepost.title }}</a>
+        </li>
+    {% endfor %}
+</ul>

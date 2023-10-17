@@ -1,0 +1,11 @@
+{% for post in posts %}
+    <p>{{ post.title }}</p>
+    <p>{{ post.content }}</p>
+    <p>{{ post.author }}</p>
+    {% for comment in post.comments.all %}
+    <p>{{ comment.message }}</p>
+    {% endfor %}
+    {% for tag in post.tags.all %}
+    <a href="/board/tag/{{tag.name}}">#{{tag.name}}</a>
+    {% endfor %}
+{% endfor %}

@@ -1,0 +1,16 @@
+<h2>제목: {{object.title}}</h2>
+<video controls width="250">
+    <source src="/media/{{object.video}}" type="video/mp4" >
+</video>
+{% if user.is_authenticated %}
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">댓글 달기</button>
+</form>
+{% endif %}
+<ul>댓글
+    {% for comment in object.comments.all %}
+    <li>{{ comment.message }}</li>
+    {% endfor %}
+</ul>

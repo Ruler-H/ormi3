@@ -1,0 +1,14 @@
+{% for i in posts %}
+    <h1>{{ i.title }}</h1>
+    <p>{{ i.content }}</p>
+    <p>{{ i.author }}</p>
+    <p>{{ i.comments }}</p>
+    <p>{{ i.tags }}</p>
+    {% for comment in i.comments.all %}
+        <p>{{ comment.message }}</p>
+    {% endfor %}
+    {% for tag in i.tags.all %}
+        <p>{{ tag.name }}</p>
+    {% endfor %}
+    <hr>
+{% endfor %}
