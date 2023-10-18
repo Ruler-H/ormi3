@@ -3,10 +3,15 @@
     <source src="/media/{{object.video}}" type="video/mp4" >
 </video>
 {% if user.is_authenticated %}
-<form action="" method="post">
+<form action="{% url 'comment' object.id %}" method="post">
     {% csrf_token %}
     {{ form }}
     <button type="submit">댓글 달기</button>
+</form>
+<a href="{% url 'tube_update' object.id %}">게시물 수정</a>
+<form action="{% url 'tube_delete' object.id %}" method="post">
+    {% csrf_token %}
+    <button type="submit">게시물 삭제</button>
 </form>
 {% endif %}
 <ul>댓글

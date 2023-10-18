@@ -10,3 +10,6 @@
         </li>
     {% endfor %}
 </ul>
+{% if user.is_authenticated %}
+<a href="{% url 'tube_create' %}">영상 업로드</a>
+{% endif %}
