@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <style></style>
+</head>
+<body>
+    <h2>Detail</h2>
+    {{ post.title }}
+    {{ post.content }}
+    {% if post.file_upload %}
+    <video src="{{ post.file_upload.url }}" controls></video>
+    {% endif %}
+    <hr>
+    <a href="{% url 'tube:post_list' %}">목록</a>
+    {% if user == post.author %}
+    <a href="{% url 'tube:post_edit' post.pk %}">수정</a>
+    <a href="{% url 'tube:post_delete' post.pk %}">삭제</a>
+    {% endif %}
+</body>
+</html>

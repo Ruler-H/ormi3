@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <style></style>
+</head>
+<body>
+    <h2>Delete</h2>
+    <form method="post">
+        {% csrf_token %}
+        <p>게시물을 삭제하시겠습니까?</p>
+        <input type="submit" value="네!" class="btn btn-primary">
+    </form>
+</body>
+</html>
