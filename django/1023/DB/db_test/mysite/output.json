@@ -1,0 +1,101 @@
+[
+{
+  "model": "blog.book",
+  "pk": 1,
+  "fields": {
+    "title": "메모혁신 Notion(노션) 활용 가이드",
+    "price": 7000,
+    "author": "이호준, 이준호, 김혜원, 김유진, 차경림, 김진, 현지연, 정승한"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 2,
+  "fields": {
+    "title": "이력서 작성 가이드",
+    "price": 10000,
+    "author": "강혜진, 김유진, 김혜원, 김진, 이범재, 이호준, 원유선, 박누리, 차경림, 최원범, 한재현"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 3,
+  "fields": {
+    "title": "제주코딩베이스캠프 Code Festival: Python 100제 1부",
+    "price": 0,
+    "author": "이호준, 강민정, 김유진, 정윤하, 최원범"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 4,
+  "fields": {
+    "title": "튜토리얼로 배우는 HTML&CSS",
+    "price": 4900,
+    "author": "이호준, 박민균, 양지혜, 정민준, 박소영, 전유빈"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 5,
+  "fields": {
+    "title": "코딩도장 튜토리얼로 배우는 Python 1편 object",
+    "price": 3000,
+    "author": "이호준, 정민준, 배희성, 김덕주, 한승협"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 6,
+  "fields": {
+    "title": "코딩도장 튜토리얼로 배우는 python 2편 제어문",
+    "price": 4900,
+    "author": "이호준, 우지훈, 박소영, 허재영"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 7,
+  "fields": {
+    "title": "코딩도장 튜토리얼로 배우는 Python 문제풀이",
+    "price": 0,
+    "author": "이호준, 전유빈, 김태범, 한승협, 김혜원, 강민정"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 8,
+  "fields": {
+    "title": "타노스의 건틀릿 알고리즘 With Python",
+    "price": 0,
+    "author": "이호준, 한승협, 강민정, 신민욱"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 9,
+  "fields": {
+    "title": "xlsxwriter 튜토리얼로 배우는 Python 엑셀 프로그래밍",
+    "price": 0,
+    "author": "이호준, 강상권, 오재원, 전진환, 문형철, 이현창"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 10,
+  "fields": {
+    "title": "러플 튜토리얼로 배우는 Python",
+    "price": 4900,
+    "author": "이호준, 배희성, 양지혜, 박소영, 김수연, 정민준"
+  }
+},
+{
+  "model": "blog.book",
+  "pk": 11,
+  "fields": {
+    "title": "인공지능을 활용한 업무자동화 With Google Developers Group JEJU",
+    "price": 0,
+    "author": "이호준, 이준호, 현암, 윤현담, 김루비, 이동민, 유승엽, 박서윤, 김채린, 한승협, 안상우, 장성원, 전진환, 강민성, 조민구, 전창삼"
+  }
+}
+]
